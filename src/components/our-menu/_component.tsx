@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const OurMenu = (props: Props) => {
+const OurMenu = () => {
   return (
     <div id="menu">
       <h1>Our Menu</h1>

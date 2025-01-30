@@ -1,7 +1,7 @@
 import banner from "../../assets/images/banner.jpg";
 import logo from "../../assets/images/logo.png";
 import { bannerLinks, socialLinks } from "../../core/data";
-import close from "../../assets/icons/email.svg";
+import menu from "../../assets/icons/menu.svg";
 
 const Banner = () => {
   return (
@@ -39,8 +39,8 @@ const Banner = () => {
           </div>
 
           {/* ******************* Mobile navigation ********************** */}
-          <nav className=" md:hidden flex justify-between items-center md:max-w-[1700px] py-[13px] mx-auto">
-            <h3 className="text-white">GH Beauty Logo</h3>
+          <nav className=" md:hidden flex justify-between md:max-w-[1700px] ">
+            <img src={logo} className="object-contain w-8 m-1" />
             <a
               className="me-1.5 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
               data-twe-offcanvas-toggle
@@ -50,7 +50,7 @@ const Banner = () => {
               data-twe-ripple-init
               data-twe-ripple-color="light"
             >
-              <img className="w-5" src={close} alt="" />
+              <img className="w-8" src={menu} alt="" />
             </a>
 
             <div
@@ -90,7 +90,7 @@ const Banner = () => {
                   </span>
                 </button>
               </div>
-              <div className="flex-grow p-4 overflow-y-auto text-black">
+              <div className="flex flex-col p-4 overflow-y-auto leading-10 text-black">
                 {bannerLinks.map((link: any, idx: number) => (
                   <a className="mr-6" key={idx} href={link.link}>
                     <small className="text-sm">{link.title}</small>

@@ -1,7 +1,10 @@
 const WhatWeDo = () => {
   return (
     <>
-      <div id="what-we-do" className="flex justify-center w-1/2 mx-auto">
+      <div
+        id="what-we-do"
+        className="flex justify-center w-1/2 mx-auto max-sm:w-full max-sm:px-12"
+      >
         <div>
           <h3 className="text-2xl italic text-center">what we do</h3>
           <p>

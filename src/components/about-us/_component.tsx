@@ -4,9 +4,13 @@ const AboutUs = () => {
   return (
     <>
       <div id="about-us" className="flex justify-center w-full ">
-        <div className="flex w-1/2 mt-24">
-          <div className="w-[16rem]">
-            <img className="object-cover w-96" src={aboutUs} alt="about-us" />
+        <div className="flex w-1/2 mt-24 max-sm:w-full max-sm:flex-col">
+          <div className="w-[16rem]  max-sm:w-full">
+            <img
+              className="object-cover w-96 max-sm:w-full"
+              src={aboutUs}
+              alt="about-us"
+            />
           </div>
           <div className="flex justify-between w-full p-10 h-80 bg-slate-200">
             <div className="">
